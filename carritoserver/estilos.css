@@ -1,0 +1,40 @@
+/* Estilos CSS para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos CSS para el encabezado */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilos CSS para los enlaces */
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Estilos CSS para las secciones */
+  section {
+    padding: 20px;
+  }
+  
+  /* Estilos CSS para las imágenes */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Estilos CSS para el pie de página */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
