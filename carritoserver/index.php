@@ -21,6 +21,7 @@ include 'conexion.php';
 		</div>
 		<div class="info">
 			<h2>Información del Carrito</h2>
+			<p>Carro conectado: <span id="conexion">Conectado</span></p>
 			<p>Distancia Recorrida: <span id="distance">0</span> metros</p>
 			<p>Dirección: <span id="direction">Norte</span></p>
 			<p>Último Color Leído: <span id="color">Rojo</span></p>
