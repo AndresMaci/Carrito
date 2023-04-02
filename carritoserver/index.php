@@ -5,31 +5,32 @@ include 'conexion.php';
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Mi página web</title>
-    <link rel="stylesheet" href="estilos.css">
-  </head>
-  <body>
-    <header>
-      <h1>Mi página web</h1>
-    </header>
-    
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Acerca de</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
-    
-    <section>
-      <h2>Bienvenidos a mi página web</h2>
-      <p>Esta es una página web de ejemplo para mostrar algunos estilos CSS básicos.</p>
-      <img src="https://via.placeholder.com/350x150" alt="Imagen de ejemplo">
-    </section>
-    
-    <footer>
-      <p>Derechos de autor © 2023 - Mi página web</p>
-    </footer>
-  </body>
+<head>
+	<title>Control de Carro</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+	<h1>Control de Carro</h1>
+	
+	<div id="botones">
+		<button id="izquierda">Izquierda</button>
+		<button id="arriba">Arriba</button>
+		<button id="abajo">Abajo</button>
+		<button id="derecha">Derecha</button>
+	</div>
+
+	<div id="informacion">
+		<h2>Información del Carro</h2>
+		<p><strong>Distancia:</strong> <span id="distancia">0</span> m</p>
+		<p><strong>Dirección:</strong> <span id="direccion">Norte</span></p>
+		<p><strong>Último Color Leído:</strong> <span id="color">Rojo</span></p>
+		<p><strong>Modo:</strong> <span id="modo">Manual</span></p>
+	</div>
+
+	<div id="cambio-modo">
+		<button id="cambiar-modo">Cambiar Modo</button>
+	</div>
+
+	<script src="script.js"></script>
+</body>
 </html>
