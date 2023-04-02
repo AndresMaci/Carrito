@@ -7,7 +7,7 @@ include 'conexion.php';
 <html>
 <head>
 	<title>Control de Carro</title>
-	<link rel="stylesheet" type="text/css" href="estilos.css">
+	 <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 	<h1>Control de Carro</h1>
