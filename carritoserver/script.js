@@ -67,19 +67,19 @@ modeEl.innerText = mode;
 function conexion() {
 if ( c === 'Conectado') {
 console.log('Cambiando a modo automático');
-autoModeBtn.disabled = true;
-leftBtn.disabled = true;
-forwardBtn.disabled = true;
-backwardBtn.disabled = true;
-rightBtn.disabled = true;
-} else {
-	
-console.log('Cambiando a modo manual');
 autoModeBtn.disabled = false;
 leftBtn.disabled = false;
 forwardBtn.disabled = false;
 backwardBtn.disabled = false;
 rightBtn.disabled = false;
+} else {
+	
+console.log('Cambiando a modo manual');
+autoModeBtn.disabled = true;
+leftBtn.disabled = true;
+forwardBtn.disabled = true;
+backwardBtn.disabled = true;
+rightBtn.disabled = true;
 
 
 }
