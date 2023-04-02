@@ -72,7 +72,7 @@ forwardBtn.disabled = true;
 backwardBtn.disabled = true;
 rightBtn.disabled = true;
 } else {
-	if (document.getElementById('conexion').innerHTML === 'Desonectado') {
+	if (document.getElementById('conexion').innerHTML === 'Desconectado') {
 console.log('Cambiando a modo manual');
 autoModeBtn.disabled = false;
 leftBtn.disabled = false;
