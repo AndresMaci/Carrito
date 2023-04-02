@@ -1,40 +1,60 @@
-/* Estilos CSS para el cuerpo del documento */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Estilos CSS para el encabezado */
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Estilos CSS para los enlaces */
-  a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  /* Estilos CSS para las secciones */
-  section {
-    padding: 20px;
-  }
-  
-  /* Estilos CSS para las imágenes */
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Estilos CSS para el pie de página */
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 20px;
+}
+
+#botones {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+#botones button {
+	font-size: 24px;
+	margin: 0 10px;
+	padding: 10px 20px;
+	border: none;
+	background-color: #4CAF50;
+	color: white;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#botones button:hover {
+	background-color: #3e8e41;
+}
+
+#informacion {
+	margin-top: 50px;
+	text-align: center;
+}
+
+#informacion h2 {
+	margin-top: 0;
+}
+
+#informacion p {
+	font-size: 18px;
+	margin: 10px 0;
+}
+
+#cambio-modo {
+	text-align: center;
+	margin-top: 50px;
+}
+
+#cambio-modo button {
+	font-size: 24px;
+	padding: 10px 20px;
+	border: none;
+	background-color #f44336;
+color: white;
+border-radius: 4px;
+cursor: pointer;
+}
