@@ -13,7 +13,7 @@ let distance = 0;
 let direction = 'Norte';
 let color = 'Rojo';
 let mode = 'Manual';
-let c = document.getElementById('c').innerHTML.toString();
+const c = document.getElementById('c');
 
 // Funciones para manejar los eventos de los botones
 function moveLeft() {
@@ -91,3 +91,4 @@ forwardBtn.addEventListener('click', moveForward);
 backwardBtn.addEventListener('click', moveBackward);
 rightBtn.addEventListener('click', moveRight);
 autoModeBtn.addEventListener('click', toggleAutoMode);
+conexion();
