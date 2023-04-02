@@ -1,75 +1,53 @@
-body {
-	font-family: Arial, sans-serif;
-}
-
 .container {
-	margin: 0 auto;
 	max-width: 800px;
+	margin: 0 auto;
 	padding: 20px;
-	text-align: center;
-}
-
-#movimientos {
-	margin-top: 50px;
-	display: flex;
-	justify-content: center;
-}
-
-#movimientos button {
-	background-color: #4caf50;
-	border: none;
-	color: white;
-	padding: 10px 20px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-	border-radius: 4px;
-}
-
-#movimientos button:hover {
-	background-color: #3e8e41;
-}
-
-#informacion {
-	margin-top: 50px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between;
+	align-items: center;
 }
 
-#informacion div {
-	background-color: #f2f2f2;
-	padding: 20px;
-	margin: 10px;
-	min-width: 200px;
-	border-radius: 4px;
+.controls {
+	flex-basis: 40%;
+	margin-bottom: 20px;
 }
 
-#informacion h2 {
+.controls h2 {
 	margin-top: 0;
 }
 
-#informacion p {
+.controls button {
+	display: block;
 	margin-bottom: 10px;
-}
-
-#cambio-modo {
-	margin-top: 50px;
-	display: flex;
-	justify-content: center;
-}
-
-#cambio-modo button {
-	background-color: #f44336;
+	padding: 10px;
+	border: none;
+	background-color: #4CAF50;
 	color: white;
-	border-radius: 4px;
+	font-size: 16px;
 	cursor: pointer;
 }
 
-#cambio-modo button:hover {
-	background-color: #da190b;
+.controls button:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
 }
 
+.info {
+	flex-basis: 50%;
+	text-align: center;
+}
+
+.info h2 {
+	margin-top: 0;
+}
+
+.info p {
+	margin: 10px 0;
+	font-size: 18px;
+}
+
+.info p span {
+	font-weight: bold;
+	color: #4CAF50;
+}
