@@ -64,7 +64,7 @@ modeEl.innerText = mode;
 }
 
 function conexion() {
-if (document.getElementById('conexion') === 'Conectado') {
+if (document.getElementById('conexion').innerHTML === 'Conectado') {
 console.log('Cambiando a modo automático');
 autoModeBtn.disabled = true;
 leftBtn.disabled = true;
@@ -72,7 +72,7 @@ forwardBtn.disabled = true;
 backwardBtn.disabled = true;
 rightBtn.disabled = true;
 } else {
-	if (document.getElementById('conexion') === 'Desonectado') {
+	if (document.getElementById('conexion').innerHTML === 'Desonectado') {
 console.log('Cambiando a modo manual');
 autoModeBtn.disabled = false;
 leftBtn.disabled = false;
