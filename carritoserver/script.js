@@ -86,9 +86,10 @@ rightBtn.disabled = true;
 }
 
 // Asignar manejadores de eventos a los botones
+conexion();
 leftBtn.addEventListener('click', moveLeft);
 forwardBtn.addEventListener('click', moveForward);
 backwardBtn.addEventListener('click', moveBackward);
 rightBtn.addEventListener('click', moveRight);
 autoModeBtn.addEventListener('click', toggleAutoMode);
-conexion();
+c.addEventListener('DOMSubtreeModified', conexion);
