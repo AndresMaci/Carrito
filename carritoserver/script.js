@@ -72,12 +72,15 @@ forwardBtn.disabled = true;
 backwardBtn.disabled = true;
 rightBtn.disabled = true;
 } else {
+	if (document.getElementById('conexion') === 'Desonectado') {
 console.log('Cambiando a modo manual');
 autoModeBtn.disabled = false;
 leftBtn.disabled = false;
 forwardBtn.disabled = false;
 backwardBtn.disabled = false;
 rightBtn.disabled = false;
+	}
+
 }
 }
 
