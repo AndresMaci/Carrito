@@ -1,38 +1,51 @@
 body {
 	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
 }
 
-h1 {
+.container {
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 20px;
 	text-align: center;
-	margin-top: 20px;
 }
 
-#botones {
+#movimientos {
+	margin-top: 50px;
 	display: flex;
 	justify-content: center;
-	margin-top: 50px;
 }
 
-#botones button {
-	font-size: 24px;
-	margin: 0 10px;
-	padding: 10px 20px;
+#movimientos button {
+	background-color: #4caf50;
 	border: none;
-	background-color: #4CAF50;
 	color: white;
-	border-radius: 4px;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
 	cursor: pointer;
+	border-radius: 4px;
 }
 
-#botones button:hover {
+#movimientos button:hover {
 	background-color: #3e8e41;
 }
 
 #informacion {
 	margin-top: 50px;
-	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#informacion div {
+	background-color: #f2f2f2;
+	padding: 20px;
+	margin: 10px;
+	min-width: 200px;
+	border-radius: 4px;
 }
 
 #informacion h2 {
@@ -40,21 +53,22 @@ h1 {
 }
 
 #informacion p {
-	font-size: 18px;
-	margin: 10px 0;
+	margin-bottom: 10px;
 }
 
 #cambio-modo {
-	text-align: center;
 	margin-top: 50px;
+	display: flex;
+	justify-content: center;
 }
 
 #cambio-modo button {
-	font-size: 24px;
-	padding: 10px 20px;
-	border: none;
-	background-color #f44336;
-color: white;
-border-radius: 4px;
-cursor: pointer;
+	background-color: #f44336;
+	color: white;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#cambio-modo button:hover {
+	background-color: #da190b;
 }
