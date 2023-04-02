@@ -13,7 +13,7 @@ let distance = 0;
 let direction = 'Norte';
 let color = 'Rojo';
 let mode = 'Manual';
-const c = document.getElementById('c');
+const c = document.getElementById('c').innerHTML;
 
 // Funciones para manejar los eventos de los botones
 function moveLeft() {
