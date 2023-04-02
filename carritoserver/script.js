@@ -7,13 +7,14 @@ const distanceEl = document.getElementById('distance');
 const directionEl = document.getElementById('direction');
 const colorEl = document.getElementById('color');
 const modeEl = document.getElementById('mode');
+const conexionEl = document.getElementById('conexion');
 
 // Definir variables de estado del carrito
 let distance = 0;
 let direction = 'Norte';
 let color = 'Rojo';
 let mode = 'Manual';
-let conexion = "Desconectado";
+let conexion = conexionEl;
 
 // Funciones para manejar los eventos de los botones
 function moveLeft() {
@@ -56,6 +57,24 @@ modeEl.innerText = mode;
 } else {
 console.log('Cambiando a modo manual');
 mode = 'Manual';
+leftBtn.disabled = false;
+forwardBtn.disabled = false;
+backwardBtn.disabled = false;
+rightBtn.disabled = false;
+modeEl.innerText = mode;
+}
+}
+function conexion() {
+if (conexion === 'Conectado') {
+console.log('Cambiando a modo automático');
+autoModeBtn.disabled = true;
+leftBtn.disabled = true;
+forwardBtn.disabled = true;
+backwardBtn.disabled = true;
+rightBtn.disabled = true;
+} else {
+console.log('Cambiando a modo manual');
+autoModeBtn.disabled = false;
 leftBtn.disabled = false;
 forwardBtn.disabled = false;
 backwardBtn.disabled = false;
