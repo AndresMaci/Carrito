@@ -64,24 +64,7 @@ rightBtn.disabled = false;
 modeEl.innerText = mode;
 }
 }
-function conexion() {
-if (conexion === 'Conectado') {
-console.log('Cambiando a modo automático');
-autoModeBtn.disabled = true;
-leftBtn.disabled = true;
-forwardBtn.disabled = true;
-backwardBtn.disabled = true;
-rightBtn.disabled = true;
-} else {
-console.log('Cambiando a modo manual');
-autoModeBtn.disabled = false;
-leftBtn.disabled = false;
-forwardBtn.disabled = false;
-backwardBtn.disabled = false;
-rightBtn.disabled = false;
-modeEl.innerText = mode;
-}
-}
+
 
 // Asignar manejadores de eventos a los botones
 leftBtn.addEventListener('click', moveLeft);
