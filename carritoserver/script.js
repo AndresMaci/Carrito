@@ -85,4 +85,4 @@ botonDerecha.addEventListener("click", moverDerecha);
 botonCambioModo.addEventListener("click", cambiarModo);
 
 // Actualizamos la información del carro por primera vez
-actualizarInformacionCarro();
+actualizarInformacionCarro(); 
