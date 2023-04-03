@@ -2,7 +2,7 @@
 include 'conexion.php';
 
 $conectado= $_POST['conec'];
-echo $conectado;
+echo "hola" .$conectado;
 ?>
 
 <!DOCTYPE html>
