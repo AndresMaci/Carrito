@@ -1,11 +1,5 @@
 <?php
 include 'conexion.php';
-if (isset($_POST['conectado'])) {
-  $conectado = $_POST['conectado'];
-  echo "Hola " . $conectado;
-} else {
-  echo "No se recibió ninguna variable 'conectado'";
-}
 ?>
 
 <!DOCTYPE html>
