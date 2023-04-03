@@ -22,7 +22,7 @@ $conectado= $_POST['con'];
 		</div>
 		<div class="info">
 			<h2>Información del Carrito</h2>
-			<p> id="cc"Carro conectado: <span id="c">$conectado</span></p>
+			<p>Carro conectado: <span id="c">$conectado</span></p>
 			<p>Distancia Recorrida: <span id="distance">0</span> metros</p>
 			<p>Dirección: <span id="direction">Norte</span></p>
 			<p>Último Color Leído: <span id="color">Rojo</span></p>
