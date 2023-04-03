@@ -1,7 +1,7 @@
 <?php
 include 'conexion.php';
 
-$conectado= $_POST['con'];
+$conectado= $_POST['cone'];
 ?>
 
 <!DOCTYPE html>
