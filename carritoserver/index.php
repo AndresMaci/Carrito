@@ -2,6 +2,7 @@
 include 'conexion.php';
 
 $conectado= $_POST['conec'];
+echo $conectado;
 ?>
 
 <!DOCTYPE html>
