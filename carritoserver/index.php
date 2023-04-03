@@ -1,7 +1,7 @@
 <?php
 include 'conexion.php';
 $conectado= $_POST['conectado'];
-echo "hola " .$coenctado;
+echo "hola " .$conectado;
 ?>
 
 <!DOCTYPE html>
