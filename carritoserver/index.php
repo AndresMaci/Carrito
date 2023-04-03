@@ -1,5 +1,7 @@
 <?php
 include 'conexion.php';
+
+$conectado= $_POST['con'];
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +22,7 @@ include 'conexion.php';
 		</div>
 		<div class="info">
 			<h2>Información del Carrito</h2>
-			<p> id="cc"Carro conectado: <span id="c">Desconectado</span></p>
+			<p> id="cc"Carro conectado: <span id="c">$conectado</span></p>
 			<p>Distancia Recorrida: <span id="distance">0</span> metros</p>
 			<p>Dirección: <span id="direction">Norte</span></p>
 			<p>Último Color Leído: <span id="color">Rojo</span></p>
