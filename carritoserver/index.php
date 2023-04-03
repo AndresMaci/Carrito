@@ -15,7 +15,9 @@ $conectado= $_POST['con'];
 	<div class="container">
 		<div class="controls">
 			<h2>Controles del Carrito</h2>
-			   <button id="left-btn" href="/iz">Izquierda</button>
+			<a href="/iz">
+			   <button id="left-btn">Izquierda</button>
+				</a>
 			   <button id="forward-btn">Adelante</button>
 			   <button id="backward-btn">Atras</button>
 			   <button id="right-btn">Derecha</button>
