@@ -30,6 +30,7 @@ $conectado= $_POST['con'];
 			<p>Último Color Leído: <span id="color">Rojo</span></p>
 			<p>Modo: <span id="mode">Manual</span></p>
 		</div>
+		
 	</div>
 	<script type="text/javascript" src="script.js"></script>
 </body>
