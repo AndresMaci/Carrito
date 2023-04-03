@@ -18,10 +18,19 @@ $conectado= $_POST['con'];
 			<a href="/iz">
 			   <button id="left-btn">Izquierda</button>
 				</a>
+			<a href="/ad">
 			   <button id="forward-btn">Adelante</button>
+				</a>
+			<a href="/at">
 			   <button id="backward-btn">Atras</button>
+				</a>
+			<a href="/de">
 			   <button id="right-btn">Derecha</button>
+				</a>
+			
+				<a href="/modo">
 			   <button id="auto-mode-btn">Modo Automático</button>
+					</a>
 				
 		</div>
 		<div class="info">
