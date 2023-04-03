@@ -85,6 +85,15 @@ rightBtn.disabled = true;
 }
 }
 
+function enviarDato(var x,var y) {
+var url ="http://direccion-del-d1.com"+y;
+  var dato = x; // el dato que quieres enviar
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", url );
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  xhr.send("dato=" + dato);
+}
+
 // Asignar manejadores de eventos a los botones
 conexion();
 leftBtn.addEventListener('click', moveLeft);
