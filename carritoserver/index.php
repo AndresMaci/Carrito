@@ -7,6 +7,7 @@ $conectado= $_POST['con'];
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="refresh" content="1">
 	<title>Control de Carrito</title>
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
@@ -14,11 +15,12 @@ $conectado= $_POST['con'];
 	<div class="container">
 		<div class="controls">
 			<h2>Controles del Carrito</h2>
-			<button id="left-btn">Izquierda</button>
-			<button id="forward-btn">Adelante</button>
-			<button id="backward-btn">Atras</button>
-			<button id="right-btn">Derecha</button>
-			<button id="auto-mode-btn">Modo Automático</button>
+			   <button id="left-btn" href="/iz">Izquierda</button>
+			   <button id="forward-btn">Adelante</button>
+			   <button id="backward-btn">Atras</button>
+			   <button id="right-btn">Derecha</button>
+			   <button id="auto-mode-btn">Modo Automático</button>
+				
 		</div>
 		<div class="info">
 			<h2>Información del Carrito</h2>
