@@ -14,6 +14,6 @@ $parametro3 = $_GET['distancia'];
   $parametro4 = $_GET['ulColor'];
 $parametro5 = $_GET['modo'];
 
-echo "hola ".$parametro1 .$parametro2 .$parametro3 .$parametro4 .$parametro5 ;
+echo 0;
 
 ?>
