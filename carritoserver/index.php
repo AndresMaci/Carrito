@@ -1,5 +1,11 @@
 <?php
 include 'conexion.php';
+
+ if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Obtener los datos enviados desde el D1 mediante el método POST
+    $nombre = $_POST["D"];
+echo $nombre;
+ }
 ?>
 
 <!DOCTYPE html>
