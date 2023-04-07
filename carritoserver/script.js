@@ -72,9 +72,9 @@ leftBtn.disabled = false;
 forwardBtn.disabled = false;
 backwardBtn.disabled = false;
 rightBtn.disabled = false;
+	console.log(c);
 } else {
-	
-console.log('Cambiando a modo manual');
+	console.log(c);
 autoModeBtn.disabled = true;
 leftBtn.disabled = true;
 forwardBtn.disabled = true;
@@ -93,7 +93,6 @@ rightBtn.disabled = true;
     };
     xmlhttp.open("GET", "consultas.php", true);
     xmlhttp.send();
-	 conexion();
 }, 1000);
  setInterval(conexion, 1000);
 // Asignar manejadores de eventos a los botones
