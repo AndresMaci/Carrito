@@ -18,9 +18,5 @@ if ($c==0){
     $c="Conectado";
 }
 
-
-
-
-mysqli_close($conexion);
 echo $c;
 ?>
