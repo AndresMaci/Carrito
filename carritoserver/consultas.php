@@ -2,7 +2,7 @@
 include 'conexion.php';
 
 
-$resultado = mysqli_query($conecta, "SELECT c FROM carrito WHERE id = 1");
+$resultado = mysqli_query($conecta, "SELECT c FROM carrito WHERE time = 1");
 
 if (!$resultado) {
     die("La consulta SQL ha fallado: " . mysqli_error($conexion));
