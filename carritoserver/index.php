@@ -4,10 +4,9 @@ $resultado = mysqli_query($conecta, "SELECT time FROM carrito WHERE time = 1");
 if (!$resultado) {
     die("La consulta SQL ha fallado: " . mysqli_error($conexion));
 }
-echo "hola ".$resultado;
 $a= mysqli_fetch_assoc($resultado);
 echo "hola ".$a;
-$valor = $fila['time'];
+$valor = $a['time'];
 $v=$valor;
 echo "hola ".$valor;
 if ($v==1) {
