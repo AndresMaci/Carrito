@@ -17,7 +17,7 @@ $m = $fila['modo'];
 if ($m==0){
     $m == "Automatico";
 }
-if ($m==0){
+if ($m==1){
     $m == "Manual";
 }
 if ($dr==0){
