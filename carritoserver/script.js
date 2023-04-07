@@ -84,27 +84,16 @@ rightBtn.disabled = true;
 
 }
 }
-    // Hacer una petición al servidor cada segundo
-    setInterval(function() {
-        // Crear un objeto XMLHttpRequest
-        var xhr = new XMLHttpRequest();
-
-        // Configurar la petición
-        xhr.open('GET', 'consultas.php', true);
-
-        // Manejar la respuesta del servidor
-        xhr.onload = function() {
-            if (this.status == 200) {
-                // Actualizar el valor de la etiqueta HTML
-                document.getElementById('c').innerHTML = this.responseText;
-            }
-        };
-
-        // Enviar la petición al servidor
-        xhr.send();
-    }, 1000); 
-
-
+ setInterval(function() {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("c").innerHTML = this.responseText;
+        }
+    };
+    xmlhttp.open("GET", "consultas.php", true);
+    xmlhttp.send();
+}, 1000); //actualiza cada segundo (1000ms)
 
 // Asignar manejadores de eventos a los botones
 conexion();
