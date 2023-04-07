@@ -102,7 +102,6 @@ var x;
 }, 1000);
 
 // Inicia la observación
-observador.observe(etiquetaObservada, { childList: true });
 // Asignar manejadores de eventos a los botones
 leftBtn.addEventListener('click', moveLeft);
 forwardBtn.addEventListener('click', moveForward);
