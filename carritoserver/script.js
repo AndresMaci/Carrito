@@ -65,6 +65,7 @@ modeEl.innerText = mode;
 }
 
 function conexion() {
+	console.log(c);
 if ( c === 'Conectado') {
 autoModeBtn.disabled = false;
 leftBtn.disabled = false;
