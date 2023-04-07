@@ -13,7 +13,8 @@ let distance = 0;
 let direction = 'Norte';
 let color = 'Rojo';
 let mode = 'Manual';
-const c = document.getElementById('c').innerHTML;
+const c1 = document.getElementById('c').innerHTML;
+const c= c1.innerHTML;
 
 // Funciones para manejar los eventos de los botones
 function moveLeft() {
@@ -86,7 +87,7 @@ rightBtn.disabled = true;
 }
  setInterval(function() {
 
-            c.innerHTML = "hola";
+            c1.innerHTML = "hola";
 
 }, 1000); //actualiza cada segundo (1000ms)
 
