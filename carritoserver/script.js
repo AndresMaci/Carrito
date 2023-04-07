@@ -97,8 +97,8 @@ var x;
 		let x2 = this.responseText;
 		let x1 =x2.split(" ");
             document.getElementById("c").innerHTML = x1[0];
-		document.getElementById("distance").innerHTML = x1[1];
-		document.getElementById("direction").innerHTML = x1[2];
+		document.getElementById("direction").innerHTML = x1[1];
+		document.getElementById("distance").innerHTML = x1[2];
 		document.getElementById("color").innerHTML = x1[3];
 		
 		if(document.getElementById("c").innerHTML!=x){
