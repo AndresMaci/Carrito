@@ -13,7 +13,7 @@ let distance = 0;
 let direction = 'Norte';
 let color = 'Rojo';
 let mode = 'Manual';
-var c = document.getElementById("c").innerHTML
+var c = document.getElementById("c").innerHTML;
 
 // Funciones para manejar los eventos de los botones
 function moveLeft() {
@@ -65,6 +65,7 @@ modeEl.innerText = mode;
 }
 
 function conexion() {
+	c = document.getElementById("c").innerHTML;
 	console.log(c);
 if ( c === 'Conectado') {
 autoModeBtn.disabled = false;
