@@ -13,8 +13,7 @@ let distance = 0;
 let direction = 'Norte';
 let color = 'Rojo';
 let mode = 'Manual';
-const c1 = document.getElementById('c').innerHTML;
-const c= c1.innerHTML;
+const c = document.getElementById('c').innerHTML;
 
 // Funciones para manejar los eventos de los botones
 function moveLeft() {
@@ -86,10 +85,15 @@ rightBtn.disabled = true;
 }
 }
  setInterval(function() {
-
-            c1.innerText = "hola";
-
-}, 1000); //actualiza cada segundo (1000ms)
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("c").innerHTML = this.responseText;
+        }
+    };
+    xmlhttp.open("GET", "consultas.php", true);
+    xmlhttp.send();
+}, 1000);
 
 // Asignar manejadores de eventos a los botones
 conexion();
@@ -98,4 +102,3 @@ forwardBtn.addEventListener('click', moveForward);
 backwardBtn.addEventListener('click', moveBackward);
 rightBtn.addEventListener('click', moveRight);
 autoModeBtn.addEventListener('click', toggleAutoMode);
-c.addEventListener('DOMSubtreeModified', conexion);
