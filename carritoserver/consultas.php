@@ -15,10 +15,10 @@ $dis = $fila['distancia'];
 $cl = $fila['ulColor'];
 $m = $fila['modo'];
 if ($m==0){
-    $m == "Automatico";
+    $m = "Automatico";
 }
 if ($m==1){
-    $m == "Manual";
+    $m = "Manual";
 }
 if ($dr==0){
     $dr="Avanzando";
