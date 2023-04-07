@@ -90,12 +90,27 @@ rightBtn.disabled = true;
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             document.getElementById("c").innerHTML = this.responseText;
-	conexion();
         }
     };
     xmlhttp.open("GET", "consultas.php", true);
     xmlhttp.send();
 }, 1000);
+const etiquetaObservada = document.querySelector('#c');
+
+// Crea una instancia de MutationObserver y pasa una función de devolución de llamada
+const observador = new MutationObserver(function(mutationsList, observer) {
+    // Recorre todas las mutaciones que se observaron
+    for(let mutation of mutationsList) {
+        // Verifica si el tipo de mutación es de cambio de texto
+        if (mutation.type === 'childList' && mutation.target === etiquetaObservada) {
+            // Ejecuta tu función
+            conexion();
+        }
+    }
+});
+
+// Inicia la observación
+observador.observe(etiquetaObservada, { childList: true });
 // Asignar manejadores de eventos a los botones
 leftBtn.addEventListener('click', moveLeft);
 forwardBtn.addEventListener('click', moveForward);
