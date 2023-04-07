@@ -85,12 +85,9 @@ rightBtn.disabled = true;
 }
 }
  setInterval(function() {
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-            document.getElementById("c").innerHTML = this.responseText;
-    };
-    xmlhttp.open("GET", "consultas.php", true);
-    xmlhttp.send();
+
+            document.getElementById("c").innerHTML = "hola";
+
 }, 1000); //actualiza cada segundo (1000ms)
 
 // Asignar manejadores de eventos a los botones
