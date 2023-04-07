@@ -94,7 +94,13 @@ var x;
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
 		x=   document.getElementById("c").innerHTML;
-            document.getElementById("c").innerHTML = this.responseText;
+		let x = this.responseText;
+		let x1 =x.split(" ");
+            document.getElementById("c").innerHTML = x1[0];
+		document.getElementById("distance").innerHTML = x1[1];
+		document.getElementById("direction").innerHTML = x1[2];
+		document.getElementById("color").innerHTML = x1[3];
+		
 		if(document.getElementById("c").innerHTML!=x){
 			conexion();
 		}
