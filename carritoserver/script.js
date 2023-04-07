@@ -100,6 +100,7 @@ var x;
 		document.getElementById("direction").innerHTML = x1[1];
 		document.getElementById("distance").innerHTML = x1[2];
 		document.getElementById("color").innerHTML = x1[3];
+		document.getElementById("mode").innerHTML = x1[4];
 		
 		if(document.getElementById("c").innerHTML!=x){
 			conexion();
