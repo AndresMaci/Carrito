@@ -104,18 +104,9 @@ var x;
     xmlhttp.send();
 }, 1000);
 function actualizarC() {
-  // Obtener el ID de la fila que se va a actualizar del atributo data-fila-id del botón
-
-  // Crear una solicitud AJAX para actualizar la fila
-  var xhr = new XMLHttpRequest();
-  xhr.open('POST', 'ac.php', true);
-  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-
-  // Definir una función que se llamará cuando se complete la solicitud AJAX
-  };
-
-  // Enviar la solicitud AJAX
-  xhr.send('fila_id=' + fila_id + '&nuevo_valor=' + encodeURIComponent('nuevo valor para el atributo'));
+  var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", "ac.php", true);
+    xmlhttp.send();
 }
 // Inicia la observación
 // Asignar manejadores de eventos a los botones
