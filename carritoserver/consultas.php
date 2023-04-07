@@ -13,7 +13,13 @@ $c = $fila['c'];
 $dr = $fila['direccion'];
 $dis = $fila['distancia'];
 $cl = $fila['ulColor'];
-
+$m = $fila['modo'];
+if ($m==0){
+    $m == "Automatico";
+}
+if ($m==0){
+    $m == "Manual";
+}
 if ($dr==0){
     $dr="Avanzando";
 }
@@ -24,7 +30,7 @@ if ($dr==2){
     $dr="Derecha";
 }
 if ($dr==3){
-    $dr="Iquierda";
+    $dr="Izquierda";
 }
 
 
@@ -35,5 +41,5 @@ if ($c==0){
     $c="Conectado";
 }
 
-echo $c ." ".$dr ." ".$dis ." ".$cl;
+echo $c ." ".$dr ." ".$dis ." ".$cl." ".$m;
 ?>
