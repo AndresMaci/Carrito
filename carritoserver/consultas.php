@@ -5,7 +5,7 @@ include 'conexion.php';
 $resultado = mysqli_query($conecta, "SELECT c FROM carrito WHERE time = 1");
 
 if (!$resultado) {
-    die("La consulta SQL ha fallado: " . mysqli_error($conexion));
+    die("La consulta SQL ha fallado: " . mysqli_error($conecta));
 }
 
 $fila = mysqli_fetch_assoc($resultado);
