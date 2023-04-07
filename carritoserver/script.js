@@ -87,7 +87,7 @@ rightBtn.disabled = true;
 }
  setInterval(function() {
 
-            c1.innerHTML = "hola";
+            c1.innerText = "hola";
 
 }, 1000); //actualiza cada segundo (1000ms)
 
