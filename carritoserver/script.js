@@ -110,6 +110,7 @@ function actualizarC() {
 }
 // Inicia la observación
 // Asignar manejadores de eventos a los botones
+conexion();
 D.addEventListener('click', actualizarC);
 leftBtn.addEventListener('click', moveLeft);
 forwardBtn.addEventListener('click', moveForward);
