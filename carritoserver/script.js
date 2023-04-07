@@ -89,6 +89,7 @@ rightBtn.disabled = true;
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             document.getElementById("c").innerHTML = this.responseText;
+		conexion();
         }
     };
     xmlhttp.open("GET", "consultas.php", true);
@@ -96,7 +97,6 @@ rightBtn.disabled = true;
 }, 1000);
 
 // Asignar manejadores de eventos a los botones
-conexion();
 leftBtn.addEventListener('click', moveLeft);
 forwardBtn.addEventListener('click', moveForward);
 backwardBtn.addEventListener('click', moveBackward);
