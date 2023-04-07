@@ -1,16 +1,26 @@
 <?php
+include 'conexion.php';
 
-$resultado = mysqli_query($conexion, "SELECT valor FROM tabla WHERE id = 1");
+
+$resultado = mysqli_query($conecta, "SELECT c FROM carrito WHERE id = 1");
 
 if (!$resultado) {
     die("La consulta SQL ha fallado: " . mysqli_error($conexion));
 }
 
 $fila = mysqli_fetch_assoc($resultado);
-$valor = $fila['valor'];
+$valor = $fila['c'];
+$c=$valor;
+if ($c==1){
+    $c="Desconectado";
+}
+if ($c==0){
+    $c="Conectado";
+}
+
+
+
 
 mysqli_close($conexion);
-
-echo $valor;
-
+echo $c;
 ?>
