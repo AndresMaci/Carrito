@@ -6,6 +6,5 @@ $resultado = mysqli_query($conecta, $sql);
 if (!$resultado) {
   die("Error al actualizar la base de datos: " . mysqli_error($conecta));
 }
-header("Location: " . $_SERVER['HTTP_REFERER']);
-exit();
+echo "ok";
 ?>
