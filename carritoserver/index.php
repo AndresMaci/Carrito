@@ -7,13 +7,14 @@ if (!$resultado) {
 $a= mysqli_fetch_assoc($resultado);
 $valor = $fila['time'];
 $v=$valor;
-echo "hola ".$v;
+echo "hola ".$valor;
 if ($v==1) {
     $v="Desconectado";
 }
 if ($v==0) {
     $v="Conectado";
 }
+echo "hola ".$v;
 ?>
 
 <!DOCTYPE html>
