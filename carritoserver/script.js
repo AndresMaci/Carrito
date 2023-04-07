@@ -74,11 +74,11 @@ leftBtn.disabled = false;
 forwardBtn.disabled = false;
 backwardBtn.disabled = false;
 rightBtn.disabled = false;
-	D.sisabled=false;
+	D.disabled=false;
 	console.log(c);
 } else {
 	console.log(c);
-	D.sisabled=true;
+	D.disabled=true;
 autoModeBtn.disabled = true;
 leftBtn.disabled = true;
 forwardBtn.disabled = true;
