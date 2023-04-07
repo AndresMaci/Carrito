@@ -67,3 +67,9 @@
   margin: 4px 2px;
   cursor: pointer;
 }
+#D:disabled {
+  background-color: #ccc;
+  color: #888;
+  cursor: not-allowed;
+  transition: background-color 0.3s ease;
+}
