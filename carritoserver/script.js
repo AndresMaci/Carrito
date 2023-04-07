@@ -95,7 +95,7 @@ rightBtn.disabled = true;
     xmlhttp.send();
 	 conexion();
 }, 1000);
-
+ setInterval(conexion, 1000);
 // Asignar manejadores de eventos a los botones
 leftBtn.addEventListener('click', moveLeft);
 forwardBtn.addEventListener('click', moveForward);
