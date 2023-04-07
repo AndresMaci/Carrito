@@ -7,6 +7,7 @@ const distanceEl = document.getElementById('distance');
 const directionEl = document.getElementById('direction');
 const colorEl = document.getElementById('color');
 const modeEl = document.getElementById('mode');
+const D = document.getElementById('D');
 
 // Definir variables de estado del carrito
 let distance = 0;
@@ -73,9 +74,11 @@ leftBtn.disabled = false;
 forwardBtn.disabled = false;
 backwardBtn.disabled = false;
 rightBtn.disabled = false;
+	D.sisabled=false;
 	console.log(c);
 } else {
 	console.log(c);
+	D.sisabled=true;
 autoModeBtn.disabled = true;
 leftBtn.disabled = true;
 forwardBtn.disabled = true;
