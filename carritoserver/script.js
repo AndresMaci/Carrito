@@ -94,8 +94,8 @@ var x;
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
 		x=   document.getElementById("c").innerHTML;
-		let x = this.responseText;
-		let x1 =x.split(" ");
+		let x2 = this.responseText;
+		let x1 =x2.split(" ");
             document.getElementById("c").innerHTML = x1[0];
 		document.getElementById("distance").innerHTML = x1[1];
 		document.getElementById("direction").innerHTML = x1[2];
