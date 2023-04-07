@@ -1,6 +1,4 @@
-<?php
-include 'conexion.php';
-?>
+
 
 <!DOCTYPE html>
 <html>
@@ -27,7 +25,9 @@ include 'conexion.php';
 			<p>Dirección: <span id="direction">Norte</span></p>
 			<p>Último Color Leído: <span id="color">Rojo</span></p>
 			<p>Modo: <span id="mode">Manual</span></p>
+			<form method="post" action="ac.php">
 			<button id="D">Desconectar</button>
+			</form>
 		</div>
 		
 	</div>
