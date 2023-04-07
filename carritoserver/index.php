@@ -22,22 +22,7 @@ include 'conexion.php';
 		</div>
 		<div class="info">
 			<h2>Información del Carrito</h2>
-			<p>Carro conectado: <span id="c"><?phpwhile (true) {
-$resultado = mysqli_query($conecta, "SELECT time FROM carrito WHERE time = 1");
-if (!$resultado) {
-    die("La consulta SQL ha fallado: " . mysqli_error($conexion));
-}
-$a= mysqli_fetch_assoc($resultado);
-$valor = $a['time'];
-$v=$valor;
-if ($v==1) {
-    $v="Desconectado";
-}
-if ($v==0) {
-    $v="Conectado";
-}
-	sleep(1);
-}; ?></span></p>
+			<p>Carro conectado: <span id="c"></span></p>
 			<p>Distancia Recorrida: <span id="distance">0</span> metros</p>
 			<p>Dirección: <span id="direction">Norte</span></p>
 			<p>Último Color Leído: <span id="color">Rojo</span></p>
