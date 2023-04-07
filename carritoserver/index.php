@@ -5,6 +5,7 @@ if (!$resultado) {
     die("La consulta SQL ha fallado: " . mysqli_error($conexion));
 }
 $a= mysqli_fetch_assoc($resultado);
+echo "hola ".$a;
 $valor = $fila['time'];
 $v=$valor;
 echo "hola ".$valor;
