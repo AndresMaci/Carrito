@@ -90,12 +90,12 @@ rightBtn.disabled = true;
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             document.getElementById("c").innerHTML = this.responseText;
+	conexion();
         }
     };
     xmlhttp.open("GET", "consultas.php", true);
     xmlhttp.send();
 }, 1000);
- setInterval(conexion, 1000);
 // Asignar manejadores de eventos a los botones
 leftBtn.addEventListener('click', moveLeft);
 forwardBtn.addEventListener('click', moveForward);
