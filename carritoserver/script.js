@@ -82,17 +82,19 @@ var x;
     xmlhttp.send();
 }, 1000);
 function actualizarC(valor) {
+  console.log("Valor enviado: " + valor);
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState === 4 && this.status === 200) {
       console.log(this.responseText); // Aquí se maneja la respuesta del servidor
-    }else{
-	      console.log("valio pito"); // Aquí se maneja la respuesta del servidor
+    } else {
+      console.log("valio pito"); // Aquí se maneja la respuesta del servidor
     }
   };
   xmlhttp.open("GET", "ac.php?v="+encodeURIComponent(valor), true);
   xmlhttp.send();
 }
+
 // Inicia la observación
 // Asignar manejadores de eventos a los botones
 conexion();
