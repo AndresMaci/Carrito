@@ -81,6 +81,7 @@ var x;
     xmlhttp.open("GET", "consultas.php", true);
     xmlhttp.send();
 }, 1000);
+var isUpdating = false;
 function actualizarC(valor) {
   console.log("Valor enviado: " + valor);
   
