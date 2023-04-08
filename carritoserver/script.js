@@ -12,7 +12,7 @@ const D = document.getElementById('D');
 let modo = 'Manual';
 var c = document.getElementById("c").innerHTML;
 function modos() {
-	function toggleAutoMode();
+	 toggleAutoMode();
 	actualizarC(2);
 }
 
