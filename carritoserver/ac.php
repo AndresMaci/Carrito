@@ -1,6 +1,6 @@
 <?php
 include 'conexion.php';
-
+if(isset($_GET['v'])) {
 $op = $_GET['v'];
 $v = 0;
 
@@ -39,5 +39,6 @@ $resultado = mysqli_query($conecta, $sql);
   if (!$resultado) {
     die("Error al actualizar la base de datos: " . mysqli_error($conecta));
   }
+}
 echo "ok";
 ?>
