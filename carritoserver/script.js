@@ -83,13 +83,24 @@ var x;
 }, 1000);
 function actualizarC(valor) {
   console.log("Valor enviado: " + valor);
+  
+  if (isUpdating) {
+    return;
+  }
+  
+  isUpdating = true;
+  
   var xmlhttp = new XMLHttpRequest();
+  
   xmlhttp.onreadystatechange = function() {
-	  console.log("Valor: " + valor);
+    console.log("Valor: " + valor);
+    
     if (this.readyState === 4 && this.status === 200) {
       console.log(this.responseText); // Aquí se maneja la respuesta del servidor
+      isUpdating = false;
     } 
   };
+  
   xmlhttp.open("GET", "ac.php?v="+encodeURIComponent(valor), true);
   xmlhttp.send();
 }
