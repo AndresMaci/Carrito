@@ -18,6 +18,7 @@
         <button id="forward-btn">Adelante</button>
         <button id="backward-btn">Atras</button>
         <button id="right-btn">Derecha</button>
+	    <button id="p">Parar</button>
         <button id="auto-mode-btn">Modo Automático</button>
     </div>
 </div>
