@@ -45,7 +45,7 @@
 			<p>Dirección: <span id="direction">Norte</span></p>
 			<p>Último Color Leído: <span id="color">Rojo</span></p>
 			<p>Modo: <span id="mode">Manual</span></p>
-			<button id="D">Desconectar</button>
+			<button id="D">D</button>
 
 		</div>
 		
