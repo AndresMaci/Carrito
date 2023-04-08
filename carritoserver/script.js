@@ -83,7 +83,7 @@ var x;
 }, 1000);
 function actualizarC(valor) {
   var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET", "ac.php?v="encodeURIComponent(valor), true);
+    xmlhttp.open("GET", "ac.php?v="+encodeURIComponent(valor), true);
     xmlhttp.send();
 }
 // Inicia la observación
