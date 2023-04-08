@@ -32,7 +32,7 @@ if ($op==6) {
    $op="direccion";
  $v=3;
 }
-$stmt = $pdo->prepare("UPDATE carrito SET c WHERE id = v");
+$stmt = $conecta->prepare("UPDATE carrito SET c WHERE id = v");
 $stmt->bindParam('c', $op);
 $stmt->bindParam('v', $v);
 $stmt->execute();
