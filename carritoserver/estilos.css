@@ -74,3 +74,38 @@
   cursor: not-allowed;
   transition: background-color 0.3s ease;
 }
+.controls {
+    position: relative;
+}
+
+#left-btn,
+#right-btn,
+#forward-btn,
+#backward-btn {
+    display: inline-block;
+    position: absolute;
+}
+
+#left-btn {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#right-btn {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#forward-btn {
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+#backward-btn {
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
