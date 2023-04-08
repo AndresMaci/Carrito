@@ -10,14 +10,17 @@
 <body>
 	<div class="container">
 		<div class="controls">
-			<h2>Controles del Carrito</h2>
-			   <button id="left-btn">Izquierda</button>
-			   <button id="forward-btn">Adelante</button>
-			   <button id="backward-btn">Atras</button>
-			   <button id="right-btn">Derecha</button>
-			   <button id="auto-mode-btn">Modo Automático</button>
-				
-		</div>
+    <h2>Controles del Carrito</h2>
+    <div class="control-btns">
+        <button id="forward-btn"><i class="fas fa-arrow-up"></i></button>
+        <div class="lateral-btns">
+            <button id="left-btn"><i class="fas fa-arrow-left"></i></button>
+            <button id="auto-mode-btn">Modo Automático</button>
+            <button id="right-btn"><i class="fas fa-arrow-right"></i></button>
+        </div>
+        <button id="backward-btn"><i class="fas fa-arrow-down"></i></button>
+    </div>
+</div>
 		<div class="info">
 			<h2>Información del Carrito</h2>
 			<p>Carro conectado: <span id="c">Desconectado</span></p>
