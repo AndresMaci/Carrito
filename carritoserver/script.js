@@ -10,7 +10,6 @@ const modeEl = document.getElementById('mode');
 const D = document.getElementById('D');
 const p = document.getElementById('p');
 
-let modo = 'Manual';
 var c = document.getElementById("c").innerHTML;
 function modos() {
 	 toggleAutoMode();
@@ -18,7 +17,7 @@ function modos() {
 }
 
 function toggleAutoMode() {
-if (mode === 'Manual') {
+if (modeEl.innerHTML === 'Manual') {
 console.log('Cambiando a modo automático');
 mode = 'Automático';
 leftBtn.disabled = true;
