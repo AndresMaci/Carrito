@@ -74,42 +74,20 @@
   cursor: not-allowed;
   transition: background-color 0.3s ease;
 }
-.controls {
-    position: relative;
-    width: 200px; /* ajusta el ancho del contenedor según tus necesidades */
-    height: 200px; /* ajusta la altura del contenedor según tus necesidades */
+.control-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.controls button {
-    position: absolute;
+.control-buttons div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
-#forward-btn {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-}
-
-#backward-btn {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-}
-
-#left-btn {
-    top: 50%;
-    left: 50%;
-    transform: translate(-100%, -50%);
-}
-
-#right-btn {
-    top: 50%;
-    left: 50%;
-    transform: translate(0%, -50%);
-}
-
-#auto-mode-btn {
-    margin: auto;
-    display: block;
+.control-buttons #auto-mode-btn {
+    order: 5;
 }
 
