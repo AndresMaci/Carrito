@@ -32,6 +32,9 @@ if ($dr==2){
 if ($dr==3){
     $dr="Izquierda";
 }
+if ($dr==4){
+    $dr="Detenido";
+}
 
 
 if ($c==1){
