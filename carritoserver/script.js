@@ -8,6 +8,7 @@ const directionEl = document.getElementById('direction');
 const colorEl = document.getElementById('color');
 const modeEl = document.getElementById('mode');
 const D = document.getElementById('D');
+const p = document.getElementById('p');
 
 let modo = 'Manual';
 var c = document.getElementById("c").innerHTML;
@@ -108,6 +109,7 @@ function actualizarC(valor) {
 // Asignar manejadores de eventos a los botones
 conexion();
 D.addEventListener('click', function() { actualizarC(1); });
+D.addEventListener('click', function() { actualizarC(7); });
 leftBtn.addEventListener('click', function() { actualizarC(6); });
 forwardBtn.addEventListener('click', function() { actualizarC(3); });
 backwardBtn.addEventListener('click', function() { actualizarC(4); });
