@@ -96,9 +96,9 @@ function actualizarC(valor) {
 // Inicia la observación
 // Asignar manejadores de eventos a los botones
 conexion();
-D.addEventListener('click', actualizarC(1));
-leftBtn.addEventListener('click',actualizarC(6));
-forwardBtn.addEventListener('click',actualizarC(3));
-backwardBtn.addEventListener('click', actualizarC(4));
-rightBtn.addEventListener('click', actualizarC(5));
+D.addEventListener('click', function() { actualizarC(1); });
+leftBtn.addEventListener('click', function() { actualizarC(6); });
+forwardBtn.addEventListener('click', function() { actualizarC(3); });
+backwardBtn.addEventListener('click', function() { actualizarC(4); });
+rightBtn.addEventListener('click', function() { actualizarC(5); });
 autoModeBtn.addEventListener('click', modos);
