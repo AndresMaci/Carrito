@@ -75,37 +75,47 @@
   transition: background-color 0.3s ease;
 }
 .controls {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#left-btn,
-#right-btn,
-#forward-btn,
-#backward-btn {
-    display: inline-block;
-    position: absolute;
+.control-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#left-btn {
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+button {
+    background-color: #fff;
+    color: #555;
+    border: none;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
-#right-btn {
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+button:hover {
+    background-color: #ddd;
 }
 
-#forward-btn {
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
+.lateral-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 20px;
 }
 
-#backward-btn {
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
+#auto-mode-btn {
+    font-size: 12px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
 }
