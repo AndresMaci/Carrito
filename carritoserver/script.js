@@ -25,11 +25,13 @@ leftBtn.disabled = true;
 forwardBtn.disabled = true;
 backwardBtn.disabled = true;
 rightBtn.disabled = true;
+	p.disabled=true;
 modeEl.innerText = mode;
 } else {
 console.log('Cambiando a modo manual');
 mode = 'Manual';
 leftBtn.disabled = false;
+	p.disabled=false;
 forwardBtn.disabled = false;
 backwardBtn.disabled = false;
 rightBtn.disabled = false;
