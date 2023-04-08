@@ -32,11 +32,10 @@ if ($op==6) {
    $op="direccion";
  $v=3;
 }
- $sql = "UPDATE carrito SET" .$op ."=" .$v ."WHERE time= 1";
-$resultado = mysqli_query($conecta, $sql);
-if (!$resultado) {
-  die("Error al actualizar la base de datos: " . mysqli_error($conecta));
-}
+$stmt = $pdo->prepare("UPDATE carrito SET c WHERE id = v");
+$stmt->bindParam('c', $op);
+$stmt->bindParam('v', $v);
+$stmt->execute();
 echo "ok";
 exit();
 ?>
