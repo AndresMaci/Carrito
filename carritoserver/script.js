@@ -88,9 +88,7 @@ function actualizarC(valor) {
 	  console.log("Valor: " + valor);
     if (this.readyState === 4 && this.status === 200) {
       console.log(this.responseText); // Aquí se maneja la respuesta del servidor
-    } else {
-      console.log("valio pito"); // Aquí se maneja la respuesta del servidor
-    }
+    } 
   };
   xmlhttp.open("GET", "ac.php?v="+encodeURIComponent(valor), true);
   xmlhttp.send();
