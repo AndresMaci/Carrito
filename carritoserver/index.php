@@ -13,14 +13,15 @@
 	<div class="container">
 		<div class="controls">
     <h2>Controles del Carrito</h2>
-    <button id="forward-btn">Adelante</button>
-    <div>
+    <div class="control-buttons">
         <button id="left-btn">Izquierda</button>
+        <button id="forward-btn">Adelante</button>
+        <button id="backward-btn">Atras</button>
         <button id="right-btn">Derecha</button>
+        <button id="auto-mode-btn">Modo Automático</button>
     </div>
-    <button id="backward-btn">Atras</button>
-    <button id="auto-mode-btn">Modo Automático</button>
 </div>
+
 		<div class="info">
 			<h2>Información del Carrito</h2>
 			<p>Carro conectado: <span id="c">Desconectado</span></p>
