@@ -8,17 +8,34 @@
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
-	<div class="container">
-		<div class="controls">
+<div class="container">
+  <div class="controls">
     <h2>Controles del Carrito</h2>
     <div class="control-buttons">
-        <button id="left-btn">Izquierda</button>
-        <button id="forward-btn">Adelante</button>
-        <button id="backward-btn">Atras</button>
-        <button id="right-btn">Derecha</button>
-	    <button id="p">Parar</button>
-        <button id="auto-mode-btn">Cambiar modo</button>
+      <div class="row">
+        <div class="col">
+          <button id="left-btn">Izquierda</button>
+        </div>
+        <div class="col">
+          <button id="forward-btn">Adelante</button>
+        </div>
+        <div class="col">
+          <button id="right-btn">Derecha</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button id="backward-btn">Atras</button>
+        </div>
+        <div class="col">
+          <button id="p">Parar</button>
+        </div>
+        <div class="col">
+          <button id="auto-mode-btn">Cambiar modo</button>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 
 		<div class="info">
