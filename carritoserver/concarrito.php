@@ -9,7 +9,7 @@ if($conecta->connect_error){
 }
 $op = $_GET['op'];
 $v = $_GET['v'];
-
+echo $op;
  if ($op == 1) {
         $sql = "UPDATE carrito SET c = 0 WHERE time = 1";
         $resultado = mysqli_query($conecta, $sql);
