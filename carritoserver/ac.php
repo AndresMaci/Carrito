@@ -1,7 +1,7 @@
 <?php
-include 'conexion.php';
-if(isset($_GET['v'])) {
 
+if(isset($_GET['v'])) {
+include 'conexion.php';
 echo "ok";
 }
 ?>
