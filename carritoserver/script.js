@@ -85,6 +85,7 @@ function actualizarC(valor) {
   console.log("Valor enviado: " + valor);
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
+	  console.log("Valor: " + valor);
     if (this.readyState === 4 && this.status === 200) {
       console.log(this.responseText); // Aquí se maneja la respuesta del servidor
     } else {
