@@ -16,6 +16,7 @@ $v = $_GET['v'];
         if (!$resultado) {
             die("Error al actualizar la base de datos: " . mysqli_error($conecta));
         }
+     echo "bien";
     } elseif ($op == 2) {
       $op = "modo";
         $sql = "SELECT * FROM carrito WHERE time = 1";
