@@ -34,10 +34,10 @@ if ($op == 1) {
   $v = 3;
 }
 
-$sql = "UPDATE carrito SET :op = :valor WHERE time = 1";
-$stmt = $conecta->prepare($sql);
-$stmt->bindParam(':valor', $v);
-$stmt->bindParam(':op', $op);
-$stmt->execute();
+$sql = "UPDATE carrito SET" .$op ."=" .$v ."WHERE time = 1";
+$resultado = mysqli_query($conecta, $sql);
+  if (!$resultado) {
+    die("Error al actualizar la base de datos: " . mysqli_error($conecta));
+  }
 echo "ok";
 ?>
