@@ -11,7 +11,7 @@ const D = document.getElementById('D');
 
 let modo = 'Manual';
 var c = document.getElementById("c").innerHTML;
-function mode() {
+function modos() {
 	function toggleAutoMode();
 	actualizarC(2);
 }
@@ -94,4 +94,4 @@ leftBtn.addEventListener('click',actualizarC(6));
 forwardBtn.addEventListener('click',actualizarC(3));
 backwardBtn.addEventListener('click', actualizarC(4));
 rightBtn.addEventListener('click', actualizarC(5));
-autoModeBtn.addEventListener('click', modo);
+autoModeBtn.addEventListener('click', modos);
