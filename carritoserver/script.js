@@ -47,10 +47,12 @@ forwardBtn.disabled = false;
 backwardBtn.disabled = false;
 rightBtn.disabled = false;
 D.disabled=false;
+	p.disabled=false;
 	console.log(c);
 } else {
 	console.log(c);
 D.disabled=true;
+	p.disabled=true;
 autoModeBtn.disabled = true;
 leftBtn.disabled = true;
 forwardBtn.disabled = true;
@@ -109,7 +111,7 @@ function actualizarC(valor) {
 // Asignar manejadores de eventos a los botones
 conexion();
 D.addEventListener('click', function() { actualizarC(1); });
-D.addEventListener('click', function() { actualizarC(7); });
+p.addEventListener('click', function() { actualizarC(7); });
 leftBtn.addEventListener('click', function() { actualizarC(6); });
 forwardBtn.addEventListener('click', function() { actualizarC(3); });
 backwardBtn.addEventListener('click', function() { actualizarC(4); });
