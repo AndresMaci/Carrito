@@ -79,15 +79,29 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    height: 100%; /* Para que el contenedor ocupe toda la altura disponible */
 }
 
 .control-buttons div {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    flex: 1; /* Para que los botones ocupen todo el espacio disponible */
+}
+
+.control-buttons #left-btn,
+.control-buttons #right-btn {
+    margin-left: auto; /* Para que los botones de izquierda y derecha se alineen a los extremos */
+}
+
+.control-buttons #forward-btn,
+.control-buttons #backward-btn {
+    margin-top: auto; /* Para que los botones de adelante y atrás se alineen en el centro vertical */
 }
 
 .control-buttons #auto-mode-btn {
     order: 5;
+    margin-top: auto; /* Para que el botón de modo automático se alinee en el extremo inferior */
 }
+
 
