@@ -34,9 +34,10 @@ if ($op == 1) {
   $v = 3;
 }
 
-$sql = "UPDATE carrito SET $op = :valor WHERE time = 1";
+$sql = "UPDATE carrito SET :op = :valor WHERE time = 1";
 $stmt = $conecta->prepare($sql);
 $stmt->bindParam(':valor', $v);
+$stmt->bindParam(':op', $op);
 $stmt->execute();
 echo "ok";
 ?>
