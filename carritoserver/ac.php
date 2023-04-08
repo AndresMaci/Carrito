@@ -16,23 +16,19 @@ if (!$resultado) {
 }
   $fila = mysqli_fetch_assoc($resultado);
 $c = $fila['modo'];
-if ($c==1)
+if ($op==3)
   $op="direccion";
    $v=0;
 }
-if ($c==0)
+if ($op==4)
    $op="direccion";
    $v=1;
 }
-if ($op==3) {
-   $op="direccion";
- $v=1;
-}
-if ($op==4) {
+if ($op==5) {
    $op="direccion";
  $v=2;
 }
-if ($op==5) {
+if ($op==6) {
    $op="direccion";
  $v=3;
 }
