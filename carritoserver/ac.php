@@ -16,10 +16,10 @@ if ($op == 1) {
   }
   $fila = mysqli_fetch_assoc($resultado);
   $c = $fila[$op];
-  if ($c==1){
-    $v=0;
-  }elseif{
-     $v=1;
+  if ($c == 1) {
+    $v = 0;
+  } else {
+    $v = 1;
   }
 } elseif ($op == 3) {
   $op = "direccion";
@@ -34,7 +34,7 @@ if ($op == 1) {
   $v = 3;
 }
 
-$sql = "UPDATE carrito SET $op = :valor WHERE time = :id";
+$sql = "UPDATE carrito SET $op = :valor WHERE time = 1";
 $stmt = $conecta->prepare($sql);
 $stmt->bindParam(':valor', $v);
 $stmt->execute();
