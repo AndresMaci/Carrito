@@ -37,5 +37,4 @@ $stmt->bindParam('c', $op);
 $stmt->bindParam('v', $v);
 $stmt->execute();
 echo "ok";
-exit();
 ?>
