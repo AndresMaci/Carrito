@@ -9,40 +9,11 @@ const colorEl = document.getElementById('color');
 const modeEl = document.getElementById('mode');
 const D = document.getElementById('D');
 
-// Definir variables de estado del carrito
-let distance = 0;
-let direction = 'Norte';
-let color = 'Rojo';
 let mode = 'Manual';
 var c = document.getElementById("c").innerHTML;
-
-// Funciones para manejar los eventos de los botones
-function moveLeft() {
-	if (mode === 'Manual') {
-		console.log('Moviendo hacia la izquierda');
-	}
-}
-
-function moveForward() {
-	if (mode === 'Manual') {
-		console.log('Moviendo hacia adelante');
-		distance += 1;
-		distanceEl.innerText = distance;
-	}
-}
-
-function moveBackward() {
-if (mode === 'Manual') {
-console.log('Moviendo hacia atrás');
-distance -= 1;
-distanceEl.innerText = distance;
-}
-}
-
-function moveRight() {
-if (mode === 'Manual') {
-console.log('Moviendo hacia la derecha');
-}
+function mode() {
+	function toggleAutoMode();
+	actualizarC(2);
 }
 
 function toggleAutoMode() {
@@ -110,17 +81,17 @@ var x;
     xmlhttp.open("GET", "consultas.php", true);
     xmlhttp.send();
 }, 1000);
-function actualizarC() {
+function actualizarC(valor) {
   var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET", "ac.php", true);
+    xmlhttp.open("GET", "ac.php?v="encodeURIComponent(valor), true);
     xmlhttp.send();
 }
 // Inicia la observación
 // Asignar manejadores de eventos a los botones
 conexion();
-D.addEventListener('click', actualizarC);
-leftBtn.addEventListener('click', moveLeft);
-forwardBtn.addEventListener('click', moveForward);
-backwardBtn.addEventListener('click', moveBackward);
-rightBtn.addEventListener('click', moveRight);
-autoModeBtn.addEventListener('click', toggleAutoMode);
+D.addEventListener('click', actualizarC(1));
+leftBtn.addEventListener('click',actualizarC(6));
+forwardBtn.addEventListener('click',actualizarC(3));
+backwardBtn.addEventListener('click', actualizarC(4));
+rightBtn.addEventListener('click', actualizarC(5));
+autoModeBtn.addEventListener('click', mode);
