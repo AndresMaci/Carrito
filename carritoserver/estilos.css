@@ -4,7 +4,8 @@
 
 }
 .x {
-   margin: 0 auto;
+  height: 30%;
+  margin: 0 auto;
   width: 80%;
   border: 2px solid black;
 }
