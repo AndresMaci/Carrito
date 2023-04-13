@@ -1,6 +1,7 @@
 .container {
   width: 80%;
   margin: 0 auto;
+  border: 2px solid black;
 }
 
 .controls {
@@ -53,7 +54,6 @@ button:disabled {
 }
 
 .info {
-  border: 1px solid #ccc;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,7 +67,6 @@ button:disabled {
 
 
 .pista {
-  border: 1px solid #ccc;
   display: flex;
   flex-direction: column;
   justify-content: center;
