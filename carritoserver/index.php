@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
+	<div class="x">
 <div class="container">
   <div class="controls">
     <h2>Controles del Carrito</h2>
@@ -52,6 +53,7 @@
 		<h2>Grafica del carro</h2>	
  <canvas id="myCanvas" width="500" height="500"></canvas>
 		</div>
+	</div>
 	</div>
 	<script type="text/javascript" src="script.js"></script>
 </body>
