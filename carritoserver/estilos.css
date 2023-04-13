@@ -55,6 +55,11 @@ button:disabled {
   width: 80%;
   margin: 0 auto;
 }
+
+.myCanvas{
+  width: 80%;
+  height: 80%;
+}
 .pista {
   width: 80%;
   margin: 0 auto;
