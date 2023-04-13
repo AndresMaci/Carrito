@@ -3,6 +3,11 @@
   margin: 0 auto;
 
 }
+body {
+  background-image: url('fondo.jpg');
+  background-size: cover;
+}
+
 .x {
   margin: 0 auto;
   width: 80%;
