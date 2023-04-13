@@ -6,12 +6,14 @@
 body {
   background-image: url('fondo.jpg');
   background-size: cover;
+  background-position: center;
 }
 
 .x {
   margin: 0 auto;
   width: 80%;
- 
+ background: transparent;
+   background-filter: blur(15px);
 }
 
 .controls {
