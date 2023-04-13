@@ -59,6 +59,10 @@ button:disabled {
   align-items: center;
 }
 
+.info button {
+  width: 150px;
+  max-width: 100%;
+}
 
 
 .pista {
