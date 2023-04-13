@@ -88,7 +88,32 @@ var x;
 var isUpdating = false;
 function actualizarC(valor) {
   console.log("Valor enviado: " + valor);
-  
+   switch(valor) {
+    case 6: // Izquierda
+      if (x - 10 >= 0) {
+        x -= 10;
+      }
+      break;
+    case 3: // Arriba
+      if (y - 10 >= 0) {
+        y -= 10;
+      }
+      break;
+    case 5: // Derecha
+      if (x + 10 < canvas.width) {
+        x += 10;
+      }
+      break;
+    case 4: // Abajo
+      if (y + 10 < canvas.height) {
+        y += 10;
+      }
+      break;
+		   		   
+      dots.push({x: x, y: y});
+
+  }
+
   if (isUpdating) {
     return;
   }
@@ -108,6 +133,7 @@ function actualizarC(valor) {
   xmlhttp.send();
 }
 //
+
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 
@@ -156,33 +182,7 @@ function clearCanvas() {
 }
 
 // Detectar las teclas presionadas
-document.addEventListener("keydown", function(event) {
-  switch(event.keyCode) {
-    case 37: // Izquierda
-      if (x - 10 >= 0) {
-        x -= 10;
-      }
-      break;
-    case 38: // Arriba
-      if (y - 10 >= 0) {
-        y -= 10;
-      }
-      break;
-    case 39: // Derecha
-      if (x + 10 < canvas.width) {
-        x += 10;
-      }
-      break;
-    case 40: // Abajo
-      if (y + 10 < canvas.height) {
-        y += 10;
-      }
-      break;
-    case 32: // Espacio
-      dots.push({x: x, y: y});
-      break;
-  }
-});
+ 
 
 // Botón de reinicio
  function reinicio() {
