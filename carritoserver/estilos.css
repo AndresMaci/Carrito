@@ -56,14 +56,13 @@ button:disabled {
   margin: 0 auto;
 }
 
-.myCanvas{
-  width: 80%;
-  height: 80%;
-}
+
 .pista {
-  width: 80%;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 p {
   margin: 10px 0;
