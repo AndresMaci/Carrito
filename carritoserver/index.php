@@ -41,7 +41,7 @@
 		<div class="info">
 			<h2>Información del Carrito</h2>
 			<p>Carro conectado: <span id="c">Desconectado</span></p>
-			<p>Distancia con el proximo objeto: <span id="distance">0</span></p>
+			<p>Distancia con el proximo objeto: <span id="Obstaculo Detectado">0</span></p>
 			<p>Dirección: <span id="direction">Norte</span></p>
 			<p>Último Color Leído: <span id="color">Rojo</span></p>
 			<p>Modo: <span id="mode">Manual</span></p>
@@ -49,7 +49,7 @@
 
 		</div>
 		<div class="pista">
-			
+		<h2>Grafica del carro</h2>	
  <canvas id="myCanvas" width="500" height="500"></canvas>
 		</div>
 	</div>
