@@ -53,11 +53,11 @@ button:disabled {
 }
 
 .info {
+  border: 1px solid #ccc;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-   margin-bottom: 30px;
 }
 
 .info button {
@@ -67,11 +67,11 @@ button:disabled {
 
 
 .pista {
+  border: 1px solid #ccc;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-   margin-bottom: 30px;
 }
 
 .pista h2 {
