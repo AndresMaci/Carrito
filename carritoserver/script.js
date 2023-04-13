@@ -77,6 +77,29 @@ var x3;
 		document.getElementById("color").innerHTML = x1[3];
 		document.getElementById("mode").innerHTML = x1[4];
 		
+		  switch(x1[1]) {
+    case "Izquierda": // Izquierda
+      if (x - 10 >= 0) {
+        x -= 10;
+      }
+      break;
+    case "Avanzando": // Arriba
+      if (y - 10 >= 0) {
+        y -= 10;
+      }
+      break;
+    case "Derecha": // Derecha
+      if (x + 10 < canvas.width) {
+        x += 10;
+      }
+      break;
+    case "Retrocediendo": // Abajo
+      if (y + 10 < canvas.height) {
+        y += 10;
+      }
+      break;
+  }
+		
 		if(document.getElementById("c").innerHTML!=x3){
 			conexion();
 		}
@@ -88,31 +111,7 @@ var x3;
 var isUpdating = false;
 function actualizarC(valor) {
   console.log("Valor enviado: " + valor);
-   switch(valor) {
-    case 6: // Izquierda
-      if (x - 10 >= 0) {
-        x -= 10;
-      }
-      break;
-    case 3: // Arriba
-      if (y - 10 >= 0) {
-        y -= 10;
-      }
-      break;
-    case 5: // Derecha
-      if (x + 10 < canvas.width) {
-        x += 10;
-      }
-      break;
-    case 4: // Abajo
-      if (y + 10 < canvas.height) {
-        y += 10;
-      }
-      break;
-		   		   
-      dots.push({x: x, y: y});
-
-  }
+ 
 
   if (isUpdating) {
     return;
