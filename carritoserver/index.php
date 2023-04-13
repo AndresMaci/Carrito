@@ -51,7 +51,6 @@
 		<div class="pista">
 			
  <canvas id="myCanvas" width="500" height="500"></canvas>
-    <button id="resetButton">Reiniciar</button>
 		</div>
 	</div>
 	<script type="text/javascript" src="script.js"></script>
