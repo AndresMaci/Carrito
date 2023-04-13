@@ -7,7 +7,6 @@
   margin: 10% 0;
   height: 80%;
   width: 80%;
-  margin: 0 auto;
   border: 2px solid black;
 }
 
@@ -86,6 +85,7 @@ button:disabled {
 
 .pista canvas {
   margin: auto;
+  padding: 10px;
 }
 
 p {
