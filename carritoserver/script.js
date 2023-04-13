@@ -107,7 +107,106 @@ function actualizarC(valor) {
   xmlhttp.open("GET", "ac.php?v="+encodeURIComponent(valor), true);
   xmlhttp.send();
 }
+//
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
 
+// Configuración inicial del punto
+var x = canvas.width / 2;
+var y = canvas.height - 10;
+var size = 5;
+var color = "#000000";
+var trail = [];
+var dots = [];
+
+// Dibujar el punto y su rastro
+function draw() {
+  // Agregar la posición actual al rastro
+  trail.push({x: x, y: y});
+
+  // Dibujar el rastro
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 1;
+  ctx.lineCap = "round";
+  ctx.beginPath();
+  ctx.moveTo(trail[0].x, trail[0].y);
+  for (var i = 1; i < trail.length; i++) {
+    ctx.lineTo(trail[i].x, trail[i].y);
+  }
+  ctx.stroke();
+
+  // Dibujar el punto
+  ctx.fillStyle = color;
+  ctx.beginPath();
+  ctx.arc(x, y, size, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Dibujar los puntos
+  ctx.fillStyle = "#FF0000";
+  for (var i = 0; i < dots.length; i++) {
+    ctx.beginPath();
+    ctx.arc(dots[i].x, dots[i].y, 3, 0, Math.PI * 2);
+    ctx.fill();
+  }
+}
+
+// Limpiar el canvas
+function clearCanvas() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+
+// Detectar las teclas presionadas
+document.addEventListener("keydown", function(event) {
+  switch(event.keyCode) {
+    case 37: // Izquierda
+      if (x - 10 >= 0) {
+        x -= 10;
+      }
+      break;
+    case 38: // Arriba
+      if (y - 10 >= 0) {
+        y -= 10;
+      }
+      break;
+    case 39: // Derecha
+      if (x + 10 < canvas.width) {
+        x += 10;
+      }
+      break;
+    case 40: // Abajo
+      if (y + 10 < canvas.height) {
+        y += 10;
+      }
+      break;
+    case 32: // Espacio
+      dots.push({x: x, y: y});
+      break;
+  }
+});
+
+// Botón de reinicio
+var resetButton = document.getElementById("resetButton");
+resetButton.addEventListener("click", function() {
+  x = canvas.width / 2;
+  y = canvas.height - 10;
+  size = 5;
+  color = "#000000";
+  trail = [];
+  dots = [];
+});
+
+// Función de animación
+function animate() {
+  clearCanvas();
+  draw();
+  requestAnimationFrame(animate);
+}
+
+// Iniciar la animación
+requestAnimationFrame(animate);
+
+
+//
 // Inicia la observación
 // Asignar manejadores de eventos a los botones
 conexion();
