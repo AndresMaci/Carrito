@@ -53,9 +53,12 @@ button:disabled {
 }
 
 .info {
-  width: 80%;
- text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 
 
 .pista {
