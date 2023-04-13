@@ -63,12 +63,12 @@ rightBtn.disabled = true;
 
 }
 }
-var x;
+var x3;
  setInterval(function() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-		x=   document.getElementById("c").innerHTML;
+		x3=   document.getElementById("c").innerHTML;
 		let x2 = this.responseText;
 		let x1 =x2.split(" ");
             document.getElementById("c").innerHTML = x1[0];
@@ -77,7 +77,7 @@ var x;
 		document.getElementById("color").innerHTML = x1[3];
 		document.getElementById("mode").innerHTML = x1[4];
 		
-		if(document.getElementById("c").innerHTML!=x){
+		if(document.getElementById("c").innerHTML!=x3){
 			conexion();
 		}
         }
