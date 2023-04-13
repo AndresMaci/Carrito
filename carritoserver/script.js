@@ -185,15 +185,14 @@ document.addEventListener("keydown", function(event) {
 });
 
 // Botón de reinicio
-var resetButton = document.getElementById("resetButton");
-resetButton.addEventListener("click", function() {
+ function reinicio() {
   x = canvas.width / 2;
   y = canvas.height - 10;
   size = 5;
   color = "#000000";
   trail = [];
   dots = [];
-});
+}
 
 // Función de animación
 function animate() {
