@@ -4,7 +4,7 @@
 <html>
 <head>
 	
-	<title>mendes</title>
+	<title>Control Carrito</title>
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
