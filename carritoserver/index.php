@@ -42,7 +42,6 @@
 		<h2>Recorrido del carro</h2>	
  <canvas id="myCanvas" width="500" height="500"></canvas>
 		</div>
-	</div>
 		<div class="info">
 			<h2>Información del Carrito</h2>
 			<p>Carro conectado: <span id="c">Desconectado</span></p>
