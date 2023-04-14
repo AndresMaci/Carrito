@@ -12,8 +12,8 @@ body {
 .x {
   margin: 0 auto;
   width: 80%;
- background: transparent;
-   background-filter: blur(15px);
+  background: transparent;
+  backdrop-filter: blur(15px);;
 }
 
 .controls {
