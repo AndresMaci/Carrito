@@ -50,7 +50,7 @@
 
 		</div>
 		<div class="pista">
-		<h2>Grafica del carro</h2>	
+		<h2>Recorrido del carro</h2>	
  <canvas id="myCanvas" width="500" height="500"></canvas>
 		</div>
 	</div>
