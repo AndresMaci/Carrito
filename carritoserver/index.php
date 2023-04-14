@@ -38,7 +38,11 @@
     </div>
   </div>
 </div>
-
+<div class="pista">
+		<h2>Recorrido del carro</h2>	
+ <canvas id="myCanvas" width="500" height="500"></canvas>
+		</div>
+	</div>
 		<div class="info">
 			<h2>Información del Carrito</h2>
 			<p>Carro conectado: <span id="c">Desconectado</span></p>
@@ -49,11 +53,7 @@
 			<button id="D">Desconectar</button>
 
 		</div>
-		<div class="pista">
-		<h2>Recorrido del carro</h2>	
- <canvas id="myCanvas" width="500" height="500"></canvas>
-		</div>
-	</div>
+		
 	</div>
 	<script type="text/javascript" src="script.js"></script>
 </body>
