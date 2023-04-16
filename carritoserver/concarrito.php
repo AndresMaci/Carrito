@@ -1,5 +1,5 @@
 <?php
-$servidor = "3.128.205.248";
+$servidor = "3.145.9.14";
 $usuario = "remoto";
 $password = "andresramos";
 $bd = "carrito";
