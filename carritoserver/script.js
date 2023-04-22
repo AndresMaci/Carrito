@@ -77,28 +77,28 @@ var x3;
 		document.getElementById("color").innerHTML = x1[3];
 		document.getElementById("mode").innerHTML = x1[4];
 		
-		  switch(x1[1]) {
-    case "Izquierda": // Izquierda
-      if (x - 10 >= 0) {
-        x -= 10;
-      }
-      break;
-    case "Avanzando": // Arriba
-      if (y - 10 >= 0) {
-        y -= 10;
-      }
-      break;
-    case "Derecha": // Derecha
-      if (x + 10 < canvas.width) {
-        x += 10;
-      }
-      break;
-    case "Retrocediendo": // Abajo
-      if (y + 10 < canvas.height) {
-        y += 10;
-      }
-      break;
-  }
+	switch ((4 + (x1[5] % 4)) % 4) {
+  case 1: // girar a la izquierda
+    if (x - 10 >= 0) {
+      x -= 10;
+    }
+    break;
+  case 2: // girar hacia atrás
+    if (y + 10 < canvas.height) {
+      y += 10;
+    }
+    break;
+  case 3: // girar a la derecha
+    if (x + 10 < canvas.width) {
+      x += 10;
+    }
+    break;
+  case 0: // avanzar hacia adelante
+    if (y - 10 >= 0) {
+      y -= 10;
+    }
+    break;
+}
 		
 		if(document.getElementById("c").innerHTML!=x3){
 			conexion();
