@@ -54,5 +54,4 @@ if ($op == 1) {
     if (!$resultado) {
         die("Error al actualizar la base de datos: " . mysqli_error($conecta));
     }
-    echo "hol";
 ?>
