@@ -45,5 +45,5 @@ if ($c==0){
     $c="Conectado";
 }
 
-echo $c ." ".$dr ." ".$dis ." ".$cl." ".$m." ".$d;
+echo $c ." ".$dr ." ".$dis ." ".$cl." ".$m ." ".$d;
 ?>
