@@ -77,7 +77,7 @@ setInterval(function () {
 			document.getElementById("color").innerHTML = x1[3];
 			document.getElementById("mode").innerHTML = x1[4];
 
-			if(x1[1]!=Detenido){
+			if(x1[1]!="Detenido"){
 				switch ((4 + (x1[5] % 4)) % 4) {
 				case 1: // girar a la izquierda
 					if (x - 10 >= 0) {
