@@ -14,6 +14,7 @@ $dr = $fila['direccion'];
 $dis = $fila['distancia'];
 $cl = $fila['ulColor'];
 $m = $fila['modo'];
+$d = $fila['d']
 if ($m==1){
     $m = "Automatico";
 }
@@ -44,5 +45,5 @@ if ($c==0){
     $c="Conectado";
 }
 
-echo $c ." ".$dr ." ".$dis ." ".$cl." ".$m;
+echo $c ." ".$dr ." ".$dis ." ".$cl." ".$m." ".$d;
 ?>
