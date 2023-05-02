@@ -51,10 +51,10 @@ if ($op == 1) {
 }elseif ($op == 6) {
     
     if ($v==0) {
-       $sql = "UPDATE carrito SET d = d + 10  WHERE time = 1";
+       $sql = "UPDATE carrito SET d = d + 1  WHERE time = 1";
     $resultado = mysqli_query($conecta, $sql);
     }else{
-     $sql = "UPDATE carrito SET  d = d -10 WHERE time = 1";
+     $sql = "UPDATE carrito SET  d = d -1 WHERE time = 1";
     $resultado = mysqli_query($conecta, $sql);
     }
     if (!$resultado) {
