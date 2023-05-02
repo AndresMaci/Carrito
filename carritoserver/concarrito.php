@@ -49,8 +49,14 @@ if ($op == 1) {
         die("Error al actualizar la base de datos: " . mysqli_error($conecta));
     }
 }elseif ($op == 6) {
-    $sql = "UPDATE carrito SET d = '$v' WHERE time = 1";
+    
+    if ($v==0) {
+       $sql = "UPDATE carrito SET d = d + 10  WHERE time = 1";
     $resultado = mysqli_query($conecta, $sql);
+    }else{
+     $sql = "UPDATE carrito SET  d = d -10 WHERE time = 1";
+    $resultado = mysqli_query($conecta, $sql);
+    }
     if (!$resultado) {
         die("Error al actualizar la base de datos: " . mysqli_error($conecta));
     }
