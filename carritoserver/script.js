@@ -73,8 +73,24 @@ setInterval(function () {
 			let x1 = x2.split(" ");
 			document.getElementById("c").innerHTML = x1[0];
 			document.getElementById("direction").innerHTML = x1[1];
-			document.getElementById("distance").innerHTML = x1[2];
-			document.getElementById("color").innerHTML = x1[3];
+			if(x1[2]==0){
+				document.getElementById("distance").innerHTML = "No";
+			}else{
+				document.getElementById("distance").innerHTML = "Si";
+			}
+			
+			switch(x1[3]){
+				case 0: 
+					document.getElementById("color").innerHTML = "Rojo";
+					break;
+					case 1: 
+					document.getElementById("color").innerHTML = "Azul";
+					break;
+					case 2: 
+					document.getElementById("color").innerHTML = "Verde";
+					break;
+			}
+			
 			document.getElementById("mode").innerHTML = x1[4];
 
 			if(x1[1]!="Detenido"){
