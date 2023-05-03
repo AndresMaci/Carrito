@@ -227,7 +227,7 @@ requestAnimationFrame(animate);
 // Inicia la observación
 // Asignar manejadores de eventos a los botones
 conexion();
-D.addEventListener('click', function () { actualizarC(1); reinicio(); });
+D.addEventListener('click', function () { actualizarC(1); reinicio(); actualizarC(7); });
 p.addEventListener('click', function () { actualizarC(7); });
 leftBtn.addEventListener('click', function () { actualizarC(6); });
 forwardBtn.addEventListener('click', function () { actualizarC(3); });
