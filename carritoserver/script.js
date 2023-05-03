@@ -81,12 +81,12 @@ setInterval(function () {
 			
 			switch(x1[3]){
 				case 0: 
-					document.getElementById("color").innerHTML = "Rojo";
+					document.getElementById("color").innerHTML = x1[3];
 					break;
-					case 1: 
+				case 1: 
 					document.getElementById("color").innerHTML = "Azul";
 					break;
-					case 2: 
+				case 2: 
 					document.getElementById("color").innerHTML = "Verde";
 					break;
 			}
