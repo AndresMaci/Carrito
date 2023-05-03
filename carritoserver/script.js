@@ -74,9 +74,9 @@ setInterval(function () {
 			document.getElementById("c").innerHTML = x1[0];
 			document.getElementById("direction").innerHTML = x1[1];
 			if(x1[2]==0){
-				document.getElementById("distance").innerHTML = "No";
-			}else{
 				document.getElementById("distance").innerHTML = "Si";
+			}else{
+				document.getElementById("distance").innerHTML = "No";
 			}
 			
 			switch(x1[3]){
