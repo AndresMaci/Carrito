@@ -78,7 +78,7 @@ setInterval(function () {
 			}else{
 				document.getElementById("distance").innerHTML = "No";
 			}
-			switch(int(x1[3])){
+			switch(parseInt(x1[3])){
 				case 0: 
 					document.getElementById("color").innerHTML = "Rojo";
 					break;
