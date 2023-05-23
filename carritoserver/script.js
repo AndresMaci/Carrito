@@ -91,7 +91,7 @@ setInterval(function () {
 			}
 			
 			document.getElementById("mode").innerHTML = x1[4];
-			if(x1[1]!="Detenido" && document.getElementById("distance").innerHTML.toString()=="No"&& c=="Conectado"){
+			if(document.getElementById("distance").innerHTML.toString()=="No"&& c=="Conectado"){
 				switch ((4 + (x1[5] % 4)) % 4) {
 				case 1: // girar a la izquierda
 					if (x - 10 >= 0) {
