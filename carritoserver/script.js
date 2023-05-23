@@ -91,27 +91,26 @@ setInterval(function () {
 			}
 			
 			document.getElementById("mode").innerHTML = x1[4];
-
-			if(x1[1]!="Detenido"){
+			if(x1[1]!="Detenido"&&document.getElementById("distance")=="No"){
 				switch ((4 + (x1[5] % 4)) % 4) {
 				case 1: // girar a la izquierda
 					if (x - 10 >= 0) {
-						x -= 10;
+						x -= 7;
 					}
 					break;
 				case 2: // girar hacia atrás
 					if (y + 10 < canvas.height) {
-						y += 10;
+						y += 7;
 					}
 					break;
 				case 3: // girar a la derecha
 					if (x + 10 < canvas.width) {
-						x += 10;
+						x += 7;
 					}
 					break;
 				case 0: // avanzar hacia adelante
 					if (y - 10 >= 0) {
-						y -= 10;
+						y -= 7;
 					}
 					break;
 			}
